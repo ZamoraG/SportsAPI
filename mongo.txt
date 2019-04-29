@@ -1,0 +1,15 @@
+mongod
+
+db.restaurants.find({name: "Fifth Avenue Bingo"})
+
+db.restaurants.find({cuisine: "American"})
+
+myRestaurant({name: "x", borough: "Queens", cuisine: "Colombian", grades: [], name: "Web Restaurant", restaurant_id: "12345"})
+
+db.restaurants.insertOne(myRestaurant)
+
+db.restaurants.find(restaurant id: 12345)
+
+db.restaurants.updateOne({id:restaurantObjId.id}, ($set:{address:"Garza Sada"}))
+
+db.restaurants.remove({id: restaurantObjId.id})
